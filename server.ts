@@ -150,7 +150,7 @@ async function startServer() {
         }));
 
       res.json({
-        totalUsers: Math.max(totalUsers, 128), // Ensure it feels alive, starting with at least 128 if newly provisioned
+        totalUsers, // Ensure it feels alive, starting with at least 128 if newly provisioned
         realCount: totalUsers,
         todaySignups,
         referralLeaderboard

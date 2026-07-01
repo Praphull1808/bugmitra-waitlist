@@ -527,7 +527,7 @@ export default function App() {
           <div className="flex justify-center items-center space-x-8 mb-12">
             <div className="text-center">
               <span className="block text-3xl sm:text-4xl font-extrabold text-white font-mono">
-                #{registeredUser ? registeredUser.position : (stats.totalUsers + 284)}
+                {registeredUser ? `#${registeredUser.position}` : 'Join Now'}
               </span>
               <span className="text-xs text-white/50 font-mono uppercase tracking-wider">Your Position</span>
             </div>
