@@ -1,60 +1,1011 @@
-<!doctype html>
-<html lang="en" class="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BugMitra - Hindi/Hinglish Coding Error Solving Community</title>
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Code Atka? BugMitra Se Poochho. BugMitra is India's premium Hindi/Hinglish developer community where beginners share coding errors, get AI help, and solve bugs together." />
-    <meta name="keywords" content="BugMitra, coding errors, Hinglish coding help, Hindi developer community, learn programming in Hindi, coding doubts, python hinglish, react help hindi" />
-    <meta name="author" content="BugMitra" />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://bugmitra.com" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BugMitra — Code Atka? BugMitra Se Poochho.</title>
+<meta name="description" content="BugMitra is a Hindi/Hinglish developer community where beginners share coding errors, get AI help, and solve bugs with other coders. Join early access.">
+<link rel="canonical" href="https://bugmitra.com/">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://bugmitra.com" />
-    <meta property="og:title" content="BugMitra - Code Atka? BugMitra Se Poochho." />
-    <meta property="og:description" content="BugMitra is a Hindi/Hinglish developer community where beginners can share coding errors, get AI help, and solve bugs with other coders." />
-    <meta property="og:image" content="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&h=630&q=80" />
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bugmitra.com/">
+<meta property="og:title" content="BugMitra — Code Atka? BugMitra Se Poochho.">
+<meta property="og:description" content="Hindi/Hinglish coding help community for beginners. AI + community support, screenshot error sharing, and a searchable fix database.">
+<meta property="og:image" content="https://bugmitra.com/og-image.png">
+<meta property="og:locale" content="en_IN">
 
-    <!-- Twitter Cards -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://bugmitra.com" />
-    <meta name="twitter:title" content="BugMitra - Hindi/Hinglish Coding Community" />
-    <meta name="twitter:description" content="BugMitra is a Hindi/Hinglish developer community where beginners can share coding errors, get AI help, and solve bugs with other coders." />
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&h=630&q=80" />
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BugMitra — Code Atka? BugMitra Se Poochho.">
+<meta name="twitter:description" content="Hindi/Hinglish coding help community for beginners. Join the early access waitlist.">
+<meta name="twitter:image" content="https://bugmitra.com/og-image.png">
 
-    <!-- Performance: Preconnect Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-    <!-- Favicon and Touch Icons (Embedded SVG for bulletproof immediate loading) -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%233b82f6'/%3E%3Cstop offset='100%25' stop-color='%238b5cf6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='%230b0f19'/%3E%3Cpath d='M30,35 L45,50 L30,65 M50,65 L70,65' fill='none' stroke='url(%23g)' stroke-width='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
-    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%233b82f6'/%3E%3Cstop offset='100%25' stop-color='%238b5cf6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='%230b0f19'/%3E%3Cpath d='M30,35 L45,50 L30,65 M50,65 L70,65' fill='none' stroke='url(%23g)' stroke-width='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "BugMitra",
+  "url": "https://bugmitra.com",
+  "description": "Hindi/Hinglish developer community where beginners share coding errors, get AI help, and solve bugs with other coders.",
+  "slogan": "Fix Bugs. Learn Together."
+}
+</script>
 
-    <!-- JSON-LD Structured Data for Rich Snippets -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "BugMitra",
-        "applicationCategory": "DeveloperCommunity",
-        "operatingSystem": "Web",
-        "description": "BugMitra is a Hindi/Hinglish developer community where beginners share coding errors, get AI help, and solve bugs together.",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "INR"
-        }
-      }
-    </script>
-  </head>
-  <body class="bg-slate-950 text-slate-100 selection:bg-blue-500 selection:text-white">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<style>
+
+  /* ---------- Tokens ---------- */
+  :root{
+    --bg:            #0a0b12;
+    --bg-soft:       #0d0f1a;
+    --surface:       rgba(255,255,255,0.045);
+    --surface-brd:   rgba(255,255,255,0.09);
+    --text:          #eef0f7;
+    --text-dim:      #9498b3;
+    --text-dimmer:   #666b8a;
+    --blue:          #5b7cff;
+    --blue-soft:     #6e8bff;
+    --purple:        #a25bff;
+    --purple-soft:   #b978ff;
+    --green:         #34d399;
+    --red:           #ff6b6b;
+    --amber:         #ffb454;
+
+    --grad-brand: linear-gradient(115deg, var(--blue) 0%, var(--purple) 100%);
+    --grad-text:  linear-gradient(115deg, #8fa4ff 0%, #c48bff 60%, #ff9ecb 100%);
+
+    --font-display: 'Sora', system-ui, sans-serif;
+    --font-body:    'Inter', system-ui, sans-serif;
+    --font-mono:    'JetBrains Mono', monospace;
+
+    --radius-lg: 22px;
+    --radius-md: 14px;
+    --radius-sm: 9px;
+
+    --ease: cubic-bezier(.22,.9,.28,1);
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important;}
+  }
+
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--font-body);
+    line-height:1.55;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  ::selection{ background:rgba(162,91,255,0.35); }
+
+  a{color:inherit; text-decoration:none;}
+  button{font-family:inherit; cursor:pointer;}
+
+  img,svg{display:block;}
+
+  .wrap{
+    max-width:1160px;
+    margin:0 auto;
+    padding:0 24px;
+  }
+
+  /* ---------- Ambient background ---------- */
+  .ambient{
+    position:fixed;
+    inset:0;
+    z-index:0;
+    pointer-events:none;
+    overflow:hidden;
+  }
+  .ambient::before, .ambient::after{
+    content:"";
+    position:absolute;
+    width:620px; height:620px;
+    border-radius:50%;
+    filter:blur(110px);
+    opacity:0.35;
+  }
+  .ambient::before{
+    background:var(--blue);
+    top:-220px; left:-160px;
+  }
+  .ambient::after{
+    background:var(--purple);
+    top:180px; right:-220px;
+    opacity:0.28;
+  }
+  .grain{
+    position:fixed; inset:0; z-index:1; pointer-events:none;
+    background-image:radial-gradient(rgba(255,255,255,0.035) 1px, transparent 1px);
+    background-size:3px 3px;
+    opacity:0.5;
+  }
+
+  main, header, footer{ position:relative; z-index:2; }
+
+  /* ---------- Nav ---------- */
+  .nav{
+    position:sticky; top:0; z-index:50;
+    backdrop-filter:blur(14px);
+    background:rgba(10,11,18,0.55);
+    border-bottom:1px solid rgba(255,255,255,0.06);
+  }
+  .nav-inner{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 24px;
+    max-width:1160px; margin:0 auto;
+  }
+  .logo{
+    display:flex; align-items:center; gap:9px;
+    font-family:var(--font-display);
+    font-weight:700;
+    font-size:18px;
+    letter-spacing:-0.01em;
+  }
+  .logo-mark{
+    width:30px; height:30px; border-radius:9px;
+    background:var(--grad-brand);
+    display:flex; align-items:center; justify-content:center;
+    font-family:var(--font-mono); font-weight:600; font-size:14px;
+    color:white;
+    box-shadow:0 0 0 1px rgba(255,255,255,0.12) inset, 0 6px 18px -6px rgba(91,124,255,0.7);
+  }
+  .nav-cta{
+    font-family:var(--font-body); font-weight:600; font-size:13.5px;
+    padding:9px 18px;
+    border-radius:100px;
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.12);
+    transition:background .25s var(--ease), transform .25s var(--ease);
+  }
+  .nav-cta:hover{ background:rgba(255,255,255,0.12); transform:translateY(-1px); }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    padding:88px 0 60px;
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1.05fr 0.95fr;
+    gap:56px;
+    align-items:center;
+  }
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    font-family:var(--font-mono);
+    font-size:12px; letter-spacing:0.02em;
+    color:var(--blue-soft);
+    background:rgba(91,124,255,0.1);
+    border:1px solid rgba(91,124,255,0.25);
+    padding:6px 12px 6px 10px;
+    border-radius:100px;
+    margin-bottom:22px;
+  }
+  .eyebrow .dot{
+    width:6px; height:6px; border-radius:50%;
+    background:var(--green);
+    box-shadow:0 0 0 3px rgba(52,211,153,0.18);
+    animation:pulse 2s infinite ease-in-out;
+  }
+  @keyframes pulse{ 0%,100%{opacity:1;} 50%{opacity:0.4;} }
+
+  .hero h1{
+    font-family:var(--font-display);
+    font-weight:800;
+    font-size:clamp(34px, 5vw, 54px);
+    line-height:1.08;
+    letter-spacing:-0.015em;
+    margin-bottom:20px;
+  }
+  .hero h1 .grad{
+    background:var(--grad-text);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+  }
+  .hero p.sub{
+    font-size:16.5px;
+    color:var(--text-dim);
+    max-width:480px;
+    margin-bottom:30px;
+  }
+  .hero-actions{
+    display:flex; align-items:center; gap:14px; flex-wrap:wrap;
+  }
+  .btn-primary{
+    font-family:var(--font-body); font-weight:600; font-size:15px;
+    color:#0a0b12;
+    background:linear-gradient(115deg, #fff, #e9ecff);
+    padding:14px 26px;
+    border-radius:100px;
+    border:none;
+    display:inline-flex; align-items:center; gap:8px;
+    box-shadow:0 10px 30px -10px rgba(255,255,255,0.25);
+    transition:transform .25s var(--ease), box-shadow .25s var(--ease);
+  }
+  .btn-primary:hover{ transform:translateY(-2px); box-shadow:0 14px 34px -10px rgba(255,255,255,0.35); }
+  .btn-ghost-note{
+    font-size:13.5px; color:var(--text-dimmer);
+    display:flex; align-items:center; gap:8px;
+  }
+  .avatars{
+    display:flex;
+  }
+  .avatars span{
+    width:26px; height:26px; border-radius:50%;
+    background:var(--grad-brand);
+    border:2px solid var(--bg);
+    margin-left:-8px;
+  }
+  .avatars span:first-child{margin-left:0;}
+
+  /* ---------- Hero terminal (signature element) ---------- */
+  .terminal{
+    background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+    border:1px solid var(--surface-brd);
+    border-radius:var(--radius-lg);
+    backdrop-filter:blur(20px);
+    box-shadow:0 30px 60px -30px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.02) inset;
+    overflow:hidden;
+    animation:float 7s ease-in-out infinite;
+  }
+  @keyframes float{ 0%,100%{transform:translateY(0);} 50%{transform:translateY(-9px);} }
+
+  .terminal-bar{
+    display:flex; align-items:center; gap:8px;
+    padding:13px 16px;
+    border-bottom:1px solid rgba(255,255,255,0.06);
+    background:rgba(255,255,255,0.02);
+  }
+  .terminal-bar .tdot{ width:10px; height:10px; border-radius:50%; }
+  .terminal-bar .tdot.r{background:#ff5f56;}
+  .terminal-bar .tdot.y{background:#ffbd2e;}
+  .terminal-bar .tdot.g{background:#27c93f;}
+  .terminal-bar .tlabel{
+    margin-left:8px; font-family:var(--font-mono); font-size:11.5px; color:var(--text-dimmer);
+  }
+
+  .terminal-body{
+    padding:20px 18px 22px;
+    font-family:var(--font-mono);
+    font-size:13px;
+  }
+  .term-line{ margin-bottom:12px; }
+  .term-error{
+    color:var(--red);
+    display:flex; gap:8px; align-items:flex-start;
+    background:rgba(255,107,107,0.08);
+    border:1px solid rgba(255,107,107,0.2);
+    border-radius:var(--radius-sm);
+    padding:10px 12px;
+  }
+  .term-chat{
+    display:flex; gap:10px; margin-top:14px;
+    opacity:0; animation:riseIn .6s var(--ease) 1.1s forwards;
+  }
+  .term-chat .who{
+    width:26px; height:26px; border-radius:8px; flex:none;
+    background:var(--grad-brand);
+    display:flex; align-items:center; justify-content:center;
+    font-size:11px; font-weight:700; color:white;
+  }
+  .term-chat .bubble{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:var(--radius-sm);
+    padding:10px 12px;
+    color:var(--text);
+    font-family:var(--font-body);
+    font-size:13px;
+  }
+  .term-chat code{
+    display:block; margin-top:8px;
+    font-family:var(--font-mono);
+    font-size:12px;
+    color:var(--blue-soft);
+    background:rgba(0,0,0,0.35);
+    padding:8px 10px;
+    border-radius:7px;
+  }
+  @keyframes riseIn{ from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:translateY(0);} }
+
+  .term-solved{
+    display:inline-flex; align-items:center; gap:6px;
+    margin-top:14px;
+    font-family:var(--font-body); font-size:12px; font-weight:600;
+    color:var(--green);
+    background:rgba(52,211,153,0.1);
+    border:1px solid rgba(52,211,153,0.25);
+    padding:5px 11px; border-radius:100px;
+    opacity:0; animation:riseIn .6s var(--ease) 1.7s forwards;
+  }
+  .cursor{
+    display:inline-block; width:7px; height:14px;
+    background:var(--blue-soft);
+    margin-left:2px; vertical-align:middle;
+    animation:blink 1s steps(1) infinite;
+  }
+  @keyframes blink{ 50%{opacity:0;} }
+
+  /* ---------- Section shell ---------- */
+  section{ padding:96px 0; }
+  .section-head{
+    max-width:600px; margin-bottom:52px;
+  }
+  .section-eyebrow{
+    font-family:var(--font-mono); font-size:12px; letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--purple-soft);
+    margin-bottom:14px;
+    display:block;
+  }
+  .section-head h2{
+    font-family:var(--font-display); font-weight:700;
+    font-size:clamp(26px, 3.4vw, 36px);
+    letter-spacing:-0.01em;
+    margin-bottom:12px;
+  }
+  .section-head p{ color:var(--text-dim); font-size:15.5px; }
+
+  /* ---------- Glass card base ---------- */
+  .card{
+    background:var(--surface);
+    border:1px solid var(--surface-brd);
+    border-radius:var(--radius-md);
+    backdrop-filter:blur(16px);
+    transition:transform .35s var(--ease), border-color .35s var(--ease), background .35s var(--ease);
+  }
+  .card:hover{
+    transform:translateY(-3px);
+    border-color:rgba(255,255,255,0.16);
+    background:rgba(255,255,255,0.065);
+  }
+
+  /* ---------- Problem ---------- */
+  .problem-grid{
+    display:grid; grid-template-columns:repeat(3, 1fr); gap:18px;
+  }
+  .problem-card{
+    padding:26px 22px;
+  }
+  .problem-card .glyph{
+    font-family:var(--font-mono);
+    font-size:12px; color:var(--red);
+    background:rgba(255,107,107,0.1);
+    border:1px solid rgba(255,107,107,0.22);
+    width:34px; height:34px; border-radius:9px;
+    display:flex; align-items:center; justify-content:center;
+    margin-bottom:16px;
+  }
+  .problem-card h3{
+    font-family:var(--font-display); font-size:16.5px; font-weight:600;
+    margin-bottom:8px;
+  }
+  .problem-card p{ color:var(--text-dim); font-size:14px; }
+
+  /* ---------- Solution ---------- */
+  .solution-wrap{
+    display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center;
+  }
+  .solution-list{ display:flex; flex-direction:column; gap:22px; }
+  .solution-item{ display:flex; gap:16px; }
+  .solution-item .num{
+    font-family:var(--font-mono); font-size:12px; color:var(--green);
+    width:30px; height:30px; border-radius:8px; flex:none;
+    background:rgba(52,211,153,0.1);
+    border:1px solid rgba(52,211,153,0.25);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .solution-item h4{ font-family:var(--font-display); font-size:15.5px; font-weight:600; margin-bottom:4px; }
+  .solution-item p{ color:var(--text-dim); font-size:14px; }
+
+  .solution-visual{
+    padding:26px;
+    border-radius:var(--radius-lg);
+  }
+  .fix-row{
+    display:flex; align-items:center; gap:10px;
+    font-family:var(--font-mono); font-size:12.5px;
+    padding:10px 12px;
+    border-radius:var(--radius-sm);
+    margin-bottom:10px;
+  }
+  .fix-row.before{ background:rgba(255,107,107,0.08); border:1px solid rgba(255,107,107,0.2); color:#ffb3b3; }
+  .fix-row.after{ background:rgba(52,211,153,0.08); border:1px solid rgba(52,211,153,0.2); color:#a9f0d1; }
+  .arrow-down{
+    text-align:center; color:var(--text-dimmer); font-family:var(--font-mono); font-size:13px; margin:6px 0;
+  }
+
+  /* ---------- Features ---------- */
+  .features-grid{
+    display:grid; grid-template-columns:repeat(3, 1fr); gap:16px;
+  }
+  .feature-card{
+    padding:24px 20px;
+    position:relative;
+  }
+  .feature-card .soon{
+    position:absolute; top:16px; right:16px;
+    font-family:var(--font-mono); font-size:10px; letter-spacing:0.04em;
+    color:var(--amber);
+    background:rgba(255,180,84,0.1);
+    border:1px solid rgba(255,180,84,0.25);
+    padding:3px 8px; border-radius:100px;
+  }
+  .feature-card .ficon{
+    width:36px; height:36px; border-radius:10px;
+    background:var(--grad-brand);
+    display:flex; align-items:center; justify-content:center;
+    font-size:15px; color:#ffffff; margin-bottom:14px;
+  }
+  .feature-card h3{ font-family:var(--font-display); font-size:15.5px; font-weight:600; margin-bottom:6px; }
+  .feature-card p{ color:var(--text-dim); font-size:13.5px; }
+
+  /* ---------- Social proof ---------- */
+  .proof{
+    padding:44px 36px;
+    border-radius:var(--radius-lg);
+    background:linear-gradient(120deg, rgba(91,124,255,0.14), rgba(162,91,255,0.14));
+    border:1px solid rgba(255,255,255,0.1);
+    display:flex; align-items:center; justify-content:space-between; gap:24px;
+    flex-wrap:wrap;
+  }
+  .proof-text h3{
+    font-family:var(--font-display); font-size:22px; font-weight:700; margin-bottom:6px;
+  }
+  .proof-text p{ color:var(--text-dim); font-size:14px; }
+  .proof-count{
+    text-align:center;
+    font-family:var(--font-display);
+  }
+  .proof-count .n{
+    font-size:38px; font-weight:800;
+    background:var(--grad-text); -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+  .proof-count .l{ font-size:12px; color:var(--text-dimmer); font-family:var(--font-mono); }
+
+  /* ---------- Waitlist form ---------- */
+  .waitlist-shell{
+    max-width:620px; margin:0 auto;
+    padding:40px;
+    border-radius:var(--radius-lg);
+  }
+  .waitlist-shell h2{
+    font-family:var(--font-display); font-weight:700; font-size:26px;
+    margin-bottom:8px; text-align:center;
+  }
+  .waitlist-shell > p.lead{
+    text-align:center; color:var(--text-dim); font-size:14.5px; margin-bottom:30px;
+  }
+  .field{ margin-bottom:18px; }
+  .field label{
+    display:block; font-size:13px; font-weight:600; color:var(--text-dim); margin-bottom:7px;
+  }
+  .field input, .field select{
+    width:100%;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.12);
+    border-radius:var(--radius-sm);
+    padding:12px 14px;
+    color:var(--text);
+    font-family:var(--font-body); font-size:14.5px;
+    transition:border-color .25s var(--ease), background .25s var(--ease);
+  }
+  .field select{ appearance:none; cursor:pointer;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6'><path d='M0 0l5 6 5-6z' fill='%239498b3'/></svg>");
+    background-repeat:no-repeat; background-position:right 14px center;
+  }
+  .field input::placeholder{ color:var(--text-dimmer); }
+  .field input:focus, .field select:focus{
+    outline:none;
+    border-color:rgba(91,124,255,0.55);
+    background:rgba(255,255,255,0.065);
+    box-shadow:0 0 0 3px rgba(91,124,255,0.15);
+  }
+  .field-row{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  .field-error{
+    font-size:12px; color:var(--red); margin-top:6px; display:none;
+  }
+  .field.invalid input, .field.invalid select{ border-color:rgba(255,107,107,0.6); }
+  .field.invalid .field-error{ display:block; }
+
+  .submit-btn{
+    width:100%;
+    font-family:var(--font-body); font-weight:700; font-size:15px;
+    color:#0a0b12;
+    background:linear-gradient(115deg, #fff, #e9ecff);
+    padding:15px;
+    border-radius:100px;
+    border:none;
+    margin-top:8px;
+    transition:transform .25s var(--ease), box-shadow .25s var(--ease);
+    box-shadow:0 10px 30px -10px rgba(255,255,255,0.25);
+  }
+  .submit-btn:hover{ transform:translateY(-2px); }
+  .submit-btn:active{ transform:translateY(0); }
+
+  .form-note{
+    text-align:center; margin-top:14px; font-size:12px; color:var(--text-dimmer);
+  }
+
+  .success-state{
+    display:none;
+    text-align:center;
+    padding:20px 0;
+    animation:riseIn .5s var(--ease) forwards;
+  }
+  .success-state .tick{
+    width:64px; height:64px; border-radius:50%;
+    background:rgba(52,211,153,0.12);
+    border:1px solid rgba(52,211,153,0.35);
+    display:flex; align-items:center; justify-content:center;
+    margin:0 auto 20px;
+    font-size:28px; color:var(--green);
+  }
+  .success-state h3{ font-family:var(--font-display); font-size:20px; font-weight:700; margin-bottom:8px; }
+  .success-state p{ color:var(--text-dim); font-size:14.5px; }
+  .success-state .pos{
+    display:inline-block; margin-top:16px;
+    font-family:var(--font-mono); font-size:12px; color:var(--blue-soft);
+    background:rgba(91,124,255,0.1); border:1px solid rgba(91,124,255,0.25);
+    padding:6px 12px; border-radius:100px;
+  }
+
+  /* ---------- FAQ ---------- */
+  .faq-list{ display:flex; flex-direction:column; gap:12px; }
+  .faq-item{
+    border-radius:var(--radius-md);
+    overflow:hidden;
+  }
+  .faq-q{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:18px 20px;
+    font-family:var(--font-display); font-weight:600; font-size:15px;
+    cursor:pointer;
+  }
+  .faq-q .plus{
+    font-family:var(--font-mono); color:var(--blue-soft); font-size:18px; font-weight:400;
+    transition:transform .3s var(--ease);
+  }
+  .faq-item.open .faq-q .plus{ transform:rotate(45deg); }
+  .faq-a{
+    max-height:0; overflow:hidden;
+    transition:max-height .35s var(--ease);
+    padding:0 20px;
+  }
+  .faq-a p{ color:var(--text-dim); font-size:14px; padding-bottom:18px; }
+  .faq-item.open .faq-a{ max-height:200px; }
+
+  /* ---------- Footer ---------- */
+  footer{
+    border-top:1px solid rgba(255,255,255,0.06);
+    padding:36px 0;
+  }
+  .footer-inner{
+    display:flex; align-items:center; justify-content:space-between;
+    flex-wrap:wrap; gap:12px;
+  }
+  .footer-inner .flogo{
+    font-family:var(--font-display); font-weight:700; font-size:14px; color:var(--text-dim);
+  }
+  .footer-inner .ftag{
+    font-family:var(--font-mono); font-size:12px; color:var(--text-dimmer);
+  }
+
+  /* ---------- Reveal on scroll ---------- */
+  .reveal{ opacity:0; transform:translateY(18px); transition:opacity .7s var(--ease), transform .7s var(--ease); }
+  .reveal.in{ opacity:1; transform:translateY(0); }
+
+  /* ---------- Loading spinner (submit button) ---------- */
+  .btn-spinner{
+    display:inline-block;
+    width:14px; height:14px;
+    border:2px solid rgba(10,11,18,0.25);
+    border-top-color:#0a0b12;
+    border-radius:50%;
+    margin-right:8px;
+    vertical-align:middle;
+    animation:spin 0.7s linear infinite;
+  }
+  @keyframes spin{ to{ transform:rotate(360deg); } }
+  .submit-btn:disabled{ opacity:0.75; cursor:not-allowed; transform:none !important; }
+
+  /* ---------- Referrer hint ---------- */
+  .referrer-hint{
+    display:none;
+    font-family:var(--font-mono); font-size:12px;
+    color:var(--green);
+    background:rgba(52,211,153,0.1);
+    border:1px solid rgba(52,211,153,0.25);
+    padding:6px 12px; border-radius:100px;
+    margin-bottom:18px;
+  }
+
+  /* ---------- Referral block (inside success state) ---------- */
+  .referral-block{ margin-top:22px; text-align:left; }
+  .referral-link-row{
+    display:flex; gap:8px;
+    margin-bottom:10px;
+  }
+  .referral-link-row input{
+    flex:1;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.12);
+    border-radius:var(--radius-sm);
+    padding:11px 13px;
+    color:var(--text-dim);
+    font-family:var(--font-mono); font-size:12.5px;
+  }
+  .copy-btn{
+    font-family:var(--font-body); font-weight:600; font-size:13px;
+    padding:0 18px;
+    border-radius:var(--radius-sm);
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.14);
+    color:var(--text);
+    transition:background .25s var(--ease);
+  }
+  .copy-btn:hover{ background:rgba(255,255,255,0.14); }
+  .referral-note{ font-size:13px; color:var(--text-dimmer); margin-bottom:16px; text-align:center; }
+  .share-row{ display:flex; gap:10px; flex-wrap:wrap; justify-content:center; }
+  .share-btn{
+    display:inline-flex; align-items:center; gap:7px;
+    font-family:var(--font-body); font-weight:600; font-size:13px;
+    padding:9px 16px;
+    border-radius:100px;
+    border:1px solid rgba(255,255,255,0.14);
+    background:rgba(255,255,255,0.05);
+    transition:transform .25s var(--ease), background .25s var(--ease);
+  }
+  .share-btn:hover{ transform:translateY(-2px); }
+  .share-btn.wa:hover{ background:rgba(52,211,153,0.15); border-color:rgba(52,211,153,0.35); }
+  .share-btn.li:hover{ background:rgba(91,124,255,0.15); border-color:rgba(91,124,255,0.35); }
+  .share-btn.tw:hover{ background:rgba(255,255,255,0.15); }
+
+  /* honeypot: hidden from real users, visible to bots that ignore CSS */
+  .hp-field{ position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden; }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 900px){
+    .hero-grid{ grid-template-columns:1fr; gap:44px; }
+    .problem-grid{ grid-template-columns:1fr; }
+    .solution-wrap{ grid-template-columns:1fr; }
+    .features-grid{ grid-template-columns:1fr 1fr; }
+    .proof{ flex-direction:column; text-align:center; }
+  }
+  @media (max-width: 560px){
+    .hero{ padding:56px 0 40px; }
+    section{ padding:64px 0; }
+    .features-grid{ grid-template-columns:1fr; }
+    .field-row{ grid-template-columns:1fr; }
+    .waitlist-shell{ padding:28px 22px; }
+    .nav-inner{ padding:14px 18px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="ambient"></div>
+<div class="grain"></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="logo">
+      <span class="logo-mark">&lt;/&gt;</span>
+      BugMitra
+    </div>
+    <a href="#waitlist" class="nav-cta">Join Early Access</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="referrer-hint" id="referrerHint"></span>
+        <span class="eyebrow"><span class="dot"></span> Beta launching soon</span>
+        <h1>Code Atka? <span class="grad">BugMitra</span> Se Poochho.</h1>
+        <p class="sub">BugMitra is a Hindi/Hinglish developer community where beginners can share coding errors, get AI help, and solve bugs with other coders.</p>
+        <div class="hero-actions">
+          <a href="#waitlist" class="btn-primary">Join Early Access <i class="fa-solid fa-arrow-right"></i></a>
+          <div class="btn-ghost-note">
+            <div class="avatars"><span></span><span></span><span></span></div>
+            First 100 get free access
+          </div>
+        </div>
+      </div>
+
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="tdot r"></span><span class="tdot y"></span><span class="tdot g"></span>
+          <span class="tlabel">error.log — react-app</span>
+        </div>
+        <div class="terminal-body">
+          <div class="term-line term-error">
+            <i class="fa-solid fa-xmark"></i> TypeError: Cannot read properties of undefined (reading 'map')
+          </div>
+          <div class="term-chat">
+            <div class="who">BM</div>
+            <div class="bubble">
+              Bhai, ye tab hota hai jab array undefined hota hai <i class="fa-solid fa-face-sweat" style="color:var(--amber);"></i>. Optional chaining laga do:
+              <code>{items?.map(i => ...)}</code>
+            </div>
+          </div>
+          <span class="term-solved"><i class="fa-solid fa-check"></i> Solved by @rohan_dev</span>
+          <div class="term-line" style="margin-top:16px; color:var(--text-dimmer);">
+            &gt; type your error here<span class="cursor"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section id="problem">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">The problem</span>
+        <h2>Beginners ka bug fixing, akela sa lagta hai</h2>
+        <p>Coding seekhte waqt sabse zyada time error samajhne me hi jaata hai — aur help dhoondhna khud ek problem ban jaata hai.</p>
+      </div>
+      <div class="problem-grid">
+        <div class="card problem-card reveal">
+          <div class="glyph">!≠</div>
+          <h3>Errors samajhna difficult</h3>
+          <p>Stack trace English me hoti hai, logic Hindi me sochte hain — beech me confusion.</p>
+        </div>
+        <div class="card problem-card reveal">
+          <div class="glyph">EN</div>
+          <h3>English forums confusing</h3>
+          <p>StackOverflow jaise platforms beginners ke liye intimidating aur jargon-heavy feel hote hain.</p>
+        </div>
+        <div class="card problem-card reveal">
+          <div class="glyph">⌀</div>
+          <h3>Answers Telegram/Discord me kho jaate hain</h3>
+          <p>Group chats me solution scroll ho jaata hai — dobara koi search nahi kar sakta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTION -->
+  <section id="solution">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">The fix</span>
+        <h2>Apni language me, apne logon ke saath</h2>
+      </div>
+      <div class="solution-wrap">
+        <div class="solution-list">
+          <div class="solution-item reveal">
+            <div class="num">अ</div>
+            <div>
+              <h4>Hindi/Hinglish coding help</h4>
+              <p>Apni bhasha me poocho, apni bhasha me samjho — no translation needed.</p>
+            </div>
+          </div>
+          <div class="solution-item reveal">
+            <div class="num">AI</div>
+            <div>
+              <h4>AI + community support</h4>
+              <p>Instant AI reply pehle, phir real developers verify aur improve karte hain.</p>
+            </div>
+          </div>
+          <div class="solution-item reveal">
+            <div class="num"><i class="fa-solid fa-camera"></i></div>
+            <div>
+              <h4>Screenshot/code error sharing</h4>
+              <p>Error ka screenshot ya code paste karo — context khud detect ho jaata hai.</p>
+            </div>
+          </div>
+          <div class="solution-item reveal">
+            <div class="num"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div>
+              <h4>Solved answers searchable</h4>
+              <p>Ek baar solve hua bug, hamesha ke liye searchable database me save.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card solution-visual reveal">
+          <div class="fix-row before"><i class="fa-solid fa-xmark"></i> ReferenceError: x is not defined</div>
+          <div class="arrow-down"><i class="fa-solid fa-arrow-down"></i> BugMitra ne fix kiya</div>
+          <div class="fix-row after"><i class="fa-solid fa-check"></i> let x = 0; // ab defined hai</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">Coming soon</span>
+        <h2>Jo features aa rahe hain</h2>
+        <p>Ye sab features early access members ke feedback se banaye ja rahe hain.</p>
+      </div>
+      <div class="features-grid">
+        <div class="card feature-card reveal">
+          <span class="soon">SOON</span>
+          <div class="ficon"><i class="fa-solid fa-camera-retro"></i></div>
+          <h3>Error post with screenshot</h3>
+          <p>Ek click me apna error post karo, screenshot ke saath.</p>
+        </div>
+        <div class="card feature-card reveal">
+          <span class="soon">SOON</span>
+          <div class="ficon"><i class="fa-solid fa-bolt"></i></div>
+          <h3>AI first reply</h3>
+          <p>Post karte hi AI turant ek starting fix suggest karega.</p>
+        </div>
+        <div class="card feature-card reveal">
+          <span class="soon">SOON</span>
+          <div class="ficon"><i class="fa-solid fa-folder-tree"></i></div>
+          <h3>Topic-wise rooms</h3>
+          <p>Python, JS, React — apne topic ke room me directly jao.</p>
+        </div>
+        <div class="card feature-card reveal">
+          <span class="soon">SOON</span>
+          <div class="ficon"><i class="fa-solid fa-circle-check"></i></div>
+          <h3>Solved badge</h3>
+          <p>Fixed bugs par "Solved" badge lag jaata hai — clarity ke liye.</p>
+        </div>
+        <div class="card feature-card reveal">
+          <span class="soon">SOON</span>
+          <div class="ficon"><i class="fa-solid fa-trophy"></i></div>
+          <h3>Reputation points</h3>
+          <p>Dusro ki help karo aur community me reputation build karo.</p>
+        </div>
+        <div class="card feature-card reveal">
+          <span class="soon">SOON</span>
+          <div class="ficon"><i class="fa-solid fa-fire"></i></div>
+          <h3>Daily coding challenge</h3>
+          <p>Roz ek chota challenge — practice bhi, community bhi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF -->
+  <section id="proof">
+    <div class="wrap">
+      <div class="proof reveal">
+        <div class="proof-text">
+          <h3>Join the first 100 beta users</h3>
+          <p>Aur early access free me paao — spots limited hain.</p>
+        </div>
+        <div class="proof-count">
+          <div class="n" id="liveCount">0</div>
+          <div class="l">DEVELOPERS JOINED</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAITLIST FORM -->
+  <section id="waitlist">
+    <div class="wrap">
+      <div class="card waitlist-shell reveal">
+
+        <div id="formState">
+          <h2>Get Early Access</h2>
+          <p class="lead">Join the waitlist — no spam, sirf launch update milega.</p>
+
+          <form id="waitlistForm" novalidate>
+            <div class="hp-field" aria-hidden="true">
+              <label for="website">Website</label>
+              <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="field" id="field-name">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Aapka naam">
+              <div class="field-error">Please enter your name.</div>
+            </div>
+
+            <div class="field" id="field-email">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com">
+              <div class="field-error">Please enter a valid email.</div>
+            </div>
+
+            <div class="field-row">
+              <div class="field" id="field-skill">
+                <label for="skill">Skill Level</label>
+                <select id="skill" name="skill">
+                  <option value="" disabled selected>Select level</option>
+                  <option>Beginner</option>
+                  <option>Student</option>
+                  <option>Freelancer</option>
+                  <option>Developer</option>
+                </select>
+                <div class="field-error">Please select a skill level.</div>
+              </div>
+
+              <div class="field" id="field-problem">
+                <label for="problem">Main Coding Problem</label>
+                <select id="problem" name="problem">
+                  <option value="" disabled selected>Select area</option>
+                  <option>HTML</option>
+                  <option>CSS</option>
+                  <option>JavaScript</option>
+                  <option>Python</option>
+                  <option>React</option>
+                  <option>Other</option>
+                </select>
+                <div class="field-error">Please select an option.</div>
+              </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Join Early Access</button>
+            <p class="form-note">We'll never spam you — just launch updates and your referral progress.</p>
+          </form>
+        </div>
+
+        <div class="success-state" id="successState">
+          <div class="tick"><i class="fa-solid fa-check"></i></div>
+          <h3>Thank you! You are on the BugMitra early access list.</h3>
+          <p>Hum launch se pehle aapko email par update karenge.</p>
+          <span class="pos" id="waitlistPosition">You're #1 on the list</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">FAQ</span>
+        <h2>Common sawaal</h2>
+      </div>
+      <div class="faq-list">
+        <div class="card faq-item reveal">
+          <div class="faq-q">BugMitra kya hai? <span class="plus">+</span></div>
+          <div class="faq-a"><p>BugMitra ek Hindi/Hinglish community hai jaha beginners apne coding errors share karte hain aur AI + real developers se help paate hain.</p></div>
+        </div>
+        <div class="card faq-item reveal">
+          <div class="faq-q">Kya ye free hoga? <span class="plus">+</span></div>
+          <div class="faq-a"><p>Haan — pehle 100 beta users ke liye BugMitra hamesha ke liye free rahega. Baad me kuch premium features add ho sakte hain.</p></div>
+        </div>
+        <div class="card faq-item reveal">
+          <div class="faq-q">Kis language me help milegi? <span class="plus">+</span></div>
+          <div class="faq-a"><p>Hindi aur Hinglish dono me — jisme aap comfortable ho, waise hi poocho.</p></div>
+        </div>
+        <div class="card faq-item reveal">
+          <div class="faq-q">Kab launch hoga? <span class="plus">+</span></div>
+          <div class="faq-a"><p>Hum abhi beta ke liye early users collect kar rahe hain. Waitlist join karne walo ko sabse pehle access milega.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div class="flogo">BugMitra © 2026</div>
+    <div class="ftag">Fix Bugs. Learn Together.</div>
+  </div>
+</footer>
+
+<script type="module" src="/js/main.js"></script>
+
+</body>
 </html>
-

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>BugMitra — Admin</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  :root{
+    --bg:#0a0b12; --surface:rgba(255,255,255,0.045); --surface-brd:rgba(255,255,255,0.09);
+    --text:#eef0f7; --text-dim:#9498b3; --text-dimmer:#666b8a;
+    --blue:#5b7cff; --purple:#a25bff; --green:#34d399; --red:#ff6b6b; --amber:#ffb454;
+    --grad-brand:linear-gradient(115deg,var(--blue),var(--purple));
+    --font-display:'Sora',sans-serif; --font-body:'Inter',sans-serif; --font-mono:'JetBrains Mono',monospace;
+    --radius-md:14px; --radius-sm:9px; --ease:cubic-bezier(.22,.9,.28,1);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--bg);color:var(--text);font-family:var(--font-body);line-height:1.5;}
+  a{color:inherit;text-decoration:none;}
+  button,input{font-family:inherit;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
+  .card{background:var(--surface);border:1px solid var(--surface-brd);border-radius:var(--radius-md);backdrop-filter:blur(16px);}
+
+  /* Login */
+  #loginScreen{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;}
+  .login-card{width:100%;max-width:360px;padding:34px;text-align:center;}
+  .login-card h1{font-family:var(--font-display);font-size:20px;margin-bottom:6px;}
+  .login-card p{color:var(--text-dim);font-size:13.5px;margin-bottom:22px;}
+  .login-card input{width:100%;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.14);border-radius:var(--radius-sm);padding:11px 13px;color:var(--text);margin-bottom:12px;font-size:14px;}
+  .login-card button{width:100%;background:linear-gradient(115deg,#fff,#e9ecff);color:#0a0b12;font-weight:700;border:none;border-radius:100px;padding:12px;font-size:14.5px;cursor:pointer;}
+  #loginError{color:var(--red);font-size:12.5px;margin-top:10px;display:none;}
+
+  /* Dashboard */
+  #dashboard{display:none;padding:32px 0 60px;}
+  .admin-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;}
+  .admin-top h1{font-family:var(--font-display);font-size:20px;}
+  .logout-btn{font-size:13px;color:var(--text-dim);background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);padding:8px 16px;border-radius:100px;cursor:pointer;}
+
+  .stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:28px;}
+  .stat-card{padding:20px;}
+  .stat-card .label{font-family:var(--font-mono);font-size:11px;color:var(--text-dimmer);text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px;}
+  .stat-card .value{font-family:var(--font-display);font-size:28px;font-weight:700;}
+
+  .panel{padding:22px;margin-bottom:22px;}
+  .panel-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:10px;}
+  .panel-head h2{font-family:var(--font-display);font-size:16px;}
+  .btn-sm{font-size:12.5px;font-weight:600;padding:7px 14px;border-radius:100px;border:1px solid rgba(255,255,255,0.14);background:rgba(255,255,255,0.06);cursor:pointer;color:var(--text);}
+  .btn-sm:hover{background:rgba(255,255,255,0.12);}
+  .btn-danger{border-color:rgba(255,107,107,0.35);color:#ffb3b3;}
+
+  input.search{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.14);border-radius:100px;padding:9px 16px;color:var(--text);font-size:13.5px;min-width:220px;}
+
+  table{width:100%;border-collapse:collapse;font-size:13.5px;}
+  th{text-align:left;color:var(--text-dimmer);font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:.03em;padding:8px 10px;border-bottom:1px solid rgba(255,255,255,0.08);}
+  td{padding:10px;border-bottom:1px solid rgba(255,255,255,0.05);color:var(--text-dim);}
+  td.name{color:var(--text);font-weight:500;}
+  .badge-pill{font-family:var(--font-mono);font-size:10.5px;padding:3px 9px;border-radius:100px;background:rgba(91,124,255,0.12);border:1px solid rgba(91,124,255,0.3);color:#8fa4ff;}
+  .del-btn{color:var(--red);background:none;border:none;cursor:pointer;font-size:13px;}
+
+  .email-form textarea, .email-form input{width:100%;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.14);border-radius:var(--radius-sm);padding:11px 13px;color:var(--text);margin-bottom:10px;font-size:13.5px;font-family:inherit;}
+  .email-form textarea{min-height:90px;resize:vertical;}
+
+  @media (max-width:800px){ .stat-grid{grid-template-columns:1fr 1fr;} table{font-size:12px;} }
+</style>
+</head>
+<body>
+
+<div id="loginScreen">
+  <div class="card login-card">
+    <h1>BugMitra Admin</h1>
+    <p>Sign in with your admin account</p>
+    <input type="email" id="adminEmail" placeholder="you@bugmitra.com">
+    <input type="password" id="adminPassword" placeholder="Password">
+    <button id="loginBtn">Sign In</button>
+    <p id="loginError">Invalid credentials or not an admin.</p>
+  </div>
+</div>
+
+<div id="dashboard">
+  <div class="wrap">
+    <div class="admin-top">
+      <h1>BugMitra — Admin Dashboard</h1>
+      <button class="logout-btn" id="logoutBtn">Sign out</button>
+    </div>
+
+    <div class="stat-grid">
+      <div class="card stat-card"><div class="label">Total Users</div><div class="value" id="statTotal">—</div></div>
+      <div class="card stat-card"><div class="label">Today's Signups</div><div class="value" id="statToday">—</div></div>
+      <div class="card stat-card"><div class="label">Top Referrer</div><div class="value" id="statTopReferrer" style="font-size:18px;">—</div></div>
+      <div class="card stat-card"><div class="label">Total Referrals</div><div class="value" id="statReferrals">—</div></div>
+    </div>
+
+    <div class="card panel">
+      <div class="panel-head">
+        <h2>Referral Leaderboard</h2>
+      </div>
+      <table>
+        <thead><tr><th>Name</th><th>Referrals</th><th>Badge</th></tr></thead>
+        <tbody id="leaderboardBody"></tbody>
+      </table>
+    </div>
+
+    <div class="card panel">
+      <div class="panel-head">
+        <h2>All Users</h2>
+        <div style="display:flex;gap:10px;">
+          <input type="text" class="search" id="userSearch" placeholder="Search name or email...">
+          <button class="btn-sm" id="exportCsvBtn"><i class="fa-solid fa-download"></i> Export CSV</button>
+        </div>
+      </div>
+      <table>
+        <thead><tr><th>#</th><th>Name</th><th>Email</th><th>Skill</th><th>Problem</th><th>Referrals</th><th>Joined</th><th></th></tr></thead>
+        <tbody id="usersBody"></tbody>
+      </table>
+    </div>
+
+    <div class="card panel">
+      <div class="panel-head"><h2>Email All Users</h2></div>
+      <div class="email-form">
+        <input type="text" id="bulkSubject" placeholder="Subject">
+        <textarea id="bulkMessage" placeholder="Message (plain text, wrapped in a basic template)"></textarea>
+        <button class="btn-sm" id="sendBulkBtn"><i class="fa-solid fa-paper-plane"></i> Send to All</button>
+        <span id="bulkStatus" style="margin-left:10px;font-size:12.5px;color:var(--text-dimmer);"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="/js/admin.js"></script>
+</body>
+</html>

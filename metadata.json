@@ -1,6 +1,0 @@
-{
-  "name": "BugMitra Waitlist",
-  "description": "A modern startup waitlist landing page for BugMitra, a Hindi/Hinglish coding community for beginners.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
