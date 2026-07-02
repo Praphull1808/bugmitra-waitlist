@@ -6,6 +6,7 @@
  * social media sharing, dynamic statistics, and a secure fully-featured admin dashboard.
  */
 
+const API_URL = import.meta.env.VITE_API_URL || '';
 import { useState, useEffect, useRef, FormEvent } from 'react';
 import { 
   Terminal, 
@@ -137,7 +138,7 @@ export default function App() {
   // Fetch updated stats from server
   const fetchStats = async () => {
     try {
-      const res = await fetch('/api/stats');
+      const res = await fetch(`${API_URL}/api/stats`);
       if (res.ok) {
         const data = await res.json();
         setStats(data);
@@ -246,7 +247,7 @@ export default function App() {
     try {
       trackEvent('Waitlist_Submit_Attempt', { skill: skillLevel, problem: codingProblem });
       
-      const response = await fetch('/api/waitlist', {
+      const response = await fetch(`${API_URL}/api/waitlist`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -307,7 +308,7 @@ export default function App() {
     setAdminLoginError(null);
 
     try {
-      const res = await fetch('/api/admin-login', {
+      const res = await fetch(`${API_URL}/api/admin/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ passcode: adminPasscode })
@@ -330,7 +331,7 @@ export default function App() {
   // Admin Actions: Fetch Users
   const fetchAdminUsers = async () => {
     try {
-      const res = await fetch('/api/admin/users', {
+      const res = await fetch(`${API_URL}/api/admin/users`, {
         headers: { 'x-admin-passcode': adminPasscode }
       });
       const data = await res.json();
@@ -347,7 +348,7 @@ export default function App() {
     if (!window.confirm('Are you absolutely sure you want to delete this user?')) return;
 
     try {
-      const res = await fetch(`/api/admin/users/${id}`, {
+      const res = await fetch(`${API_URL}/api/admin/users/${id}`, {
         method: 'DELETE',
         headers: { 'x-admin-passcode': adminPasscode }
       });
@@ -371,7 +372,7 @@ export default function App() {
     setBroadcastStatus('Sending emails to everyone on the waitlist...');
 
     try {
-      const res = await fetch('/api/admin/email-all', {
+      const res = await fetch(`${API_URL}/api/admin/email-all`, {
         method: 'POST',
         headers: { 
           'Content-Type': 'application/json',
