@@ -5,8 +5,8 @@
 // =========================================================
 
 export const CONFIG = {
-  SUPABASE_URL: "YOUR_SUPABASE_PROJECT_URL",        // e.g. https://xxxxx.supabase.co
-  SUPABASE_ANON_KEY: "YOUR_SUPABASE_ANON_PUBLIC_KEY",
+  SUPABASE_URL: "https://tttqtpfyfiuttwbhpody.supabase.co",        // e.g. https://xxxxx.supabase.co
+  SUPABASE_ANON_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR0dHF0cGZ5Zml1dHR3Ymhwb2R5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI4Nzg2ODMsImV4cCI6MjA5ODQ1NDY4M30.eFsXcnz2UKtIQXS9IUFEFH1Vez0AKu7fK-znosX-gFo",
 
   // Google Analytics 4 measurement ID (e.g. "G-XXXXXXXXXX")
   GA_MEASUREMENT_ID: "G-XXXXXXXXXX",
@@ -14,7 +14,7 @@ export const CONFIG = {
   // Microsoft Clarity project ID
   CLARITY_PROJECT_ID: "YOUR_CLARITY_ID",
 
-  SITE_URL: "https://bugmitra.com",
+  SITE_URL: "https://bugmitra-waitlist.vercel.app/",
 
   // Referral reward thresholds (kept in sync with schema.sql triggers)
   REFERRAL_TIERS: [

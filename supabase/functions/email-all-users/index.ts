@@ -7,7 +7,7 @@
 import { serve } from "https://deno.land/std@0.192.0/http/server.ts";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
-const RESEND_API_KEY = Deno.env.get("re_S8RQrkcr_8WpEatyCD2d9Uh8HdeprXmmu")!;
+const RESEND_API_KEY = Deno.env.get("re_DSND9Lbb_JatdMeUKU2ZA2SKe6RQG9btu")!;
 const SUPABASE_URL = Deno.env.get("https://tttqtpfyfiuttwbhpody.supabase.co")!;
 const SERVICE_ROLE_KEY = Deno.env.get("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR0dHF0cGZ5Zml1dHR3Ymhwb2R5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI4Nzg2ODMsImV4cCI6MjA5ODQ1NDY4M30.eFsXcnz2UKtIQXS9IUFEFH1Vez0AKu7fK-znosX-gFo")!;
 const FROM_ADDRESS = "BugMitra <hello@bugmitra.com>";
